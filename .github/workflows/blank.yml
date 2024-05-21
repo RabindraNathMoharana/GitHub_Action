@@ -4,7 +4,7 @@ jobs:
   job_name: print_task
     runs-on: ubuntu-latest
     steps:
-      - name: print hello_world
+      - name: print_hello_world
         run: echo"I'm robo hello_world"
        
   
