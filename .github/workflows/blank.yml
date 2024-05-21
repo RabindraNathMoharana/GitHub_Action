@@ -2,9 +2,9 @@ name: GAction_Task
 on: push
 jobs:
   my_job: print_task
-    runs-on: ubuntu-latest
-    steps:
-      - name: print_hello_world
-        run: echo"I'm robo hello_world"
+    runs-on:ubuntu-latest
+    steps
+      - name print_hello_world
+        run echo"I'm robo hello_world"
        
   
