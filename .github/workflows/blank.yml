@@ -1,7 +1,7 @@
 name: GAction_Task
 on: push
 jobs:
-  job_name: print_task
+  my_job: print_task
     runs-on: ubuntu-latest
     steps:
       - name: print_hello_world
