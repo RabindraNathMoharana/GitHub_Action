@@ -5,6 +5,7 @@ on:
       environments:
           discription: 'The environment to deploy to'
           required: true
+          type: environment
           
 jobs:
   deploy:
