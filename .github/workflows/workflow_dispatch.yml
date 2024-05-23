@@ -5,12 +5,7 @@ on:
       environments:
           discription: 'The environment to deploy to'
           required: true
-          default: 'production'
-          type: choice
-          options:
-            - Prod
-            - Qa
-            - Dev
+          
 jobs:
   deploy:
     runs-on: ubuntu-latest
