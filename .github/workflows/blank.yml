@@ -1,10 +1,12 @@
-name: hello_world
+name: hello-world
 on: push
-jobs: 
-  my-job: print_hello
-  runs-on: ubuntu-latest
-  steps:
-    - name: print_hello
-      run: echo "print_hello world rabindra"
-
-
+jobs:
+  my-job: 
+   runs-on: ubuntu-latest
+   name: print-hello
+   steps:
+     - name: print_hello
+       run: echo "print_hello_rabindra"
+       
+  
+    
