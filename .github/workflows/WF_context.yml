@@ -18,4 +18,17 @@ jobs:
         run: echo "hello! $MY_ACTION1"
         env:
           MY_ACTION1: ${{ github.action }}
+
+      - name: "my step 4"
+        run: echo "hello $MY_ACCOUNT"
+        env: 
+          MY_ACCOUNT: ${{ github.repository_id }}
+
+      - name: "my step 5"
+        run: echo "hello $MY_ACCOUNT_NAME"
+        env:   
+          MY_ACCOUNT_NAME: ${{ github.repository_owner }} 
+
+          
+      
           
