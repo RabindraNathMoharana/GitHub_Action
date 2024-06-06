@@ -29,6 +29,13 @@ jobs:
         env:   
           MY_ACCOUNT_NAME: ${{ github.repository_owner }} 
 
+      - name: "my step 6"
+        run: echo "hello $MY_EVENT_NAME"
+        env:   
+          MY_EVENT_NAME: ${{ github.event_name }}
+
+          
+
           
       
           
