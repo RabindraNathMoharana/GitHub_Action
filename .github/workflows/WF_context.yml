@@ -13,3 +13,9 @@ jobs:
         run: echo "hello! $MY_NAME"
         env: 
           MY_NAME: ${{ github.actor }}
+
+      - name: "my step 3"
+        run: echo "hello! $MY_ACTION1"
+        env:
+          MY_ACTION1: ${{ github.action }}
+          
