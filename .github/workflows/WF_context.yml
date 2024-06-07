@@ -12,7 +12,7 @@ jobs:
       - name: "my step 2"
         run: echo "hello! $MY_NAME"
         env: 
-          MY_NAME: ${{ github.actor }}
+          MY_NAME: ${{ github.trigger_actor }}
 
       - name: "my step 3"
         run: echo "hello! $MY_ACTION1"
