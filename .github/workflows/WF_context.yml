@@ -37,7 +37,13 @@ jobs:
       - name: "my step 7"
         run: echo "The action ref is $MY_ACTION_REF"
         env: 
-          MY_ACTION_REF: ${{ github.action_ref }}    
+          MY_ACTION_REF: ${{ github.action_ref }}  
+
+      - name: "my step8"
+        run: echo "This is the branch $MY_BRANCH"
+        env:
+          MY_BRANCH: ${{ github.ref_name }}
+          
 
           
 
