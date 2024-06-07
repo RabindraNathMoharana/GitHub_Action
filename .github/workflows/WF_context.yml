@@ -34,6 +34,11 @@ jobs:
         env:   
           MY_EVENT_NAME: ${{ github.event_name }}
 
+      - name: "my step 7"
+        run: echo "The action ref is $MY_ACTION_REF"
+        env: 
+          MY_ACTION_REF: ${{ github.action_ref }}    
+
           
 
           
