@@ -18,5 +18,5 @@ jobs:
         uses: actions/upload-artifacts@v3
         with:
           name: static-site
-          path: ./
+          path: ./app.txt
           
