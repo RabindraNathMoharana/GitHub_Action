@@ -1,0 +1,22 @@
+name: Build next.js web app
+on: ['push']
+jobs:
+  build_project:
+    name: build project
+    runs-on: ubuntu-latest
+    steps:   
+      - name: checkout code
+        uses: action/checkout@v3 
+
+      - name: install NPM dependencies
+        run: npm install
+
+      - name: build project assets
+        run: npm run build
+
+      - name: upload static site content
+        uses: actions/upload-artifacts@v3
+        with:
+          name: static-site
+          path: .next/
+          
