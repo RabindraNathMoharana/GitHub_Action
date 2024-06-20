@@ -1,3 +1,3 @@
-![podcast_poster] (./src/images/)
+![podcast_poster] (./src/image/rabin.jpg)
 
 I'm an Associate DevOps Engineer
